@@ -4,7 +4,7 @@
 import PackageDescription
 
 let llamaVersion = "b8693"
-let llamaChecksum = "1d513d313c0153fe7deed74b4f15fcff60198304224d76a42149ab0409107313"
+let llamaChecksum = "d53edc12afd3ae5145fc2aaa886105c40ca82253be46719315efb7a9d50aa4d8"
 
 let package = Package(
     name: "swift-llama-cpp",
@@ -28,7 +28,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "llama",
-            url: "https://github.com/ggml-org/llama.cpp/releases/download/\(llamaVersion)/llama-\(llamaVersion)-xcframework.zip",
+            url: "https://github.com/BrunoCerberus/swift-llama-cpp/releases/download/\(llamaVersion)/llama-b8693-fixed.zip",
             checksum: llamaChecksum
         ),
         .testTarget(
